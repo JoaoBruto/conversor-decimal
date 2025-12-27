@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor em Binário</title>
+    <script src="index.js" defer ></script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div id="janela">
+        <h1>Seja bem-vindo ao Convertor em Binário!</h1>
+
+            <div id="interacao-do-usuario">
+                <label for="numero_decimal">Escolha um número decimal:</label>
+                <input type="number" id="numero_decimal_input" name="numero_decimal">
+                <button id="converter_button"><img src="Imagens/troca (1).png" alt="">Converter para Binário</button>
+            </div>
+
+        <div id="UX">
+            <h3>O seu número escolhido é: <span id="numero_escolhido">0</span></h3>
+            <h3>O seu número em binário é: <span id="numero_binario">0</span> </h3>
+        </div>
+            <button onclick="location.reload()"><img src="Imagens/reiniciar.png" alt=""> Clique aqui para escolher outro número</button>
+    </div>
+</body>
+</html>
