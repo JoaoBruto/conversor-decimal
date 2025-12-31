@@ -1,16 +1,19 @@
 body {
-    background-color: rgb(36, 40, 44); /* cor de fundo escura para todo o site */
-    background-image: url(Imagens/fundo.jpg);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) /* cor de fundo escura para todo o site */
 }
 
 #janela { /* estilo para a janela principal */
+
     margin: auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 24px;
     width: 60%;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     padding-bottom: 15%;
-    background-color: rgb(36, 40, 44);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    max-width: 850px;
+
 }
 
 h1 { /* estilo para o título principal */
@@ -64,10 +67,8 @@ button:hover { /* estilo para o botão quando o mouse está sobre ele */
 #interacao-do-usuario input {
     color: rgb(255, 255, 255);
     background-color: rgb(38, 38, 39);
-    font-family: Arial, Helvetica, sans-serif
-}
-
-#numero_decimal_input {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
     font-size: 1em;
     padding: 5px;
     border-radius: 5px;
@@ -76,6 +77,13 @@ button:hover { /* estilo para o botão quando o mouse está sobre ele */
     max-width: 80px;
     margin-top: 15px;
 }
+
+#interacao-do-usuario input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(110, 179, 235);
+    border: 1px solid rgb(110, 179, 235);
+}
+
 
 #converter_button {
     font-family: Arial, Helvetica, sans-serif;
@@ -95,3 +103,9 @@ img {
     padding-right: 5px;
     background-color: transparent;
 }
+
+#numero_binario {
+    color: rgb(110, 179, 235); 
+}
+
+
